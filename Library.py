@@ -5,12 +5,14 @@ class  Library:
     def  __init__(self):
         self.lib_book = {}
 
+        
     def  add_book(self,book_name,book_rating):
         if book_name  is not  self.lib_book.keys():
            self.lib_book[book_name] = book_rating
         else:
             print(f"{book_name} Book already  in the  Library with Book ratings {self.lib_book.get(book_name)}")
 
+            
     def  change_book_name(self,book_name,new_book_name,book_rating):
         if  book_name not in self.lib_book.keys():
             print(f"\n {book_name} Book does not exist  in the  Library ")
@@ -26,6 +28,7 @@ class  Library:
             self.lib_book[book_name] = new_rating
             print(f"\n{book_name} Book   rating  updated to {new_rating}"  )
 
+            
     def  get_all_book(self):
           for  i in self.lib_book:
             print(f"\n {i} , {self.lib_book[i]}")
@@ -62,16 +65,7 @@ class  Library:
             json_lib_read = json.load(inLib_read)
         for i in json_lib_read:
             print(f"{i} ,{json_lib_read[i]} \n")
-    # def  open_data_sqlite(self):
-    #
-    #     # base = sqlite3.connect("new_lib.db")
-    #     # cur = base.cursor()
-    #     # query = "insert into table_name " + str(tuple(self.lib_book.keys())) + " values" + str(tuple(self.lib_book.values())) + ";"
-    #     # base.execute(query)
-    #     # base.commit()
-    #     # base.close()
-
-
+  
 
 
 
