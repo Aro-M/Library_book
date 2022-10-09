@@ -4,7 +4,6 @@ import  sqlite3
 class  Library:
     def  __init__(self):
         self.lib_book = {}
-
         
     def  add_book(self,book_name,book_rating):
         if book_name  is not  self.lib_book.keys():
