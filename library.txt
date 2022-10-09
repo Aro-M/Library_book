@@ -1,0 +1,9 @@
+{
+    "Charls Petcold": 7,
+    "Effetive Meyers": 10,
+    "100 days  of coding": 4,
+    "Python cookbook": 14,
+    "Steven Prata": 6,
+    "flu clear": 8,
+    "fl clear": 8
+}
